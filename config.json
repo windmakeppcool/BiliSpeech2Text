@@ -1,13 +1,34 @@
 {
     "bilibili": {
-        "cookies": {
-            "SESSDATA": "6f61bfe1%2C1741786292%2C813b8%2A92CjDSg3Qb1WHTAS4tbNsmq6nSHAKtO9A5CKD3nHW6OPMbfC162ez2ZiuoMnFPZ47xxlwSVmlUVk96am1VLWtnbTF5R2VPdk03YlZ6REwyWmRSa3N0cXBLS0pBaExELTQ0ZjJManNZenh5SEpQMC0yMlVlXzhKUjk5Z1lTZWdxb0F3ZmpIVXpsUENnIIEC",
-            "bili_jct": "8b25e1ddd94a0af4289483a7aa81cc1a",
-            "DedeUserID": "11639074"
-        },
+        "cookies": {},
         "headers": {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
             "Referer": "https://www.bilibili.com"
         }
+    },
+    "asr": {
+        "provider": "mimo",
+        "base_url": "https://token-plan-cn.xiaomimimo.com/v1",
+        "model": "mimo-v2.5-asr",
+        "language": "zh",
+        "timeout": 180,
+        "retries": 3
+    },
+    "organize": {
+        "enabled": true,
+        "model": "mimo-v2.6-flash",
+        "temperature": 0.3,
+        "max_input_chars": 6000,
+        "retries": 2,
+        "thinking": false
+    },
+    "audio": {
+        "chunk_seconds": 70,
+        "overlap_seconds": 2.0,
+        "sample_rate": 16000,
+        "bitrate": "48k",
+        "silence_db": -25,
+        "silence_dur": 0.3,
+        "ffmpeg": ""
     }
 }

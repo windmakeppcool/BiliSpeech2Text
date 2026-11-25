@@ -4,6 +4,7 @@ docs
 沟通过程记录.md
 
 # local env files
+.env
 .env.local
 .env.*.local
 
@@ -25,5 +26,18 @@ pnpm-debug.log*
 *.idea
 *.zip
 *.gz
+*.whl
 node_modules
 
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 本地下载的 ffmpeg / 音频产物
+.tools/
+.tmp/
+.vendor/
+bilibili_video/
+.dsh/
